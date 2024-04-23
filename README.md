@@ -250,6 +250,10 @@ void drawonFrame(Mat& frame , vector<int>pos_coord)
     
     https://youtu.be/8pc017com_Q
 
+- 발표 영상
+
+  https://www.youtube.com/watch?v=PtIJUK09_gw&t=15s
+
 - csv 파일 및 정확도 확인 (정답과 비교)
     
     ![image](https://github.com/Chonamhoon/Line_Detection_Project/assets/145315696/f89fdab9-b107-4de1-bea5-edb8d57fdf1a)
