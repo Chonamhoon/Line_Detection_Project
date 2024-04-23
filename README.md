@@ -30,6 +30,11 @@
 
 기본으로 탑재된 Library와 Package만으로도 프로젝트를 수행하는데 무리가 없으나 필요한 경우 원하는 패키지 및 라이브러리를 추가하여 사용할 수 있습니다.
 
+
+## 주행 영상
+[https://drive.google.com/drive/folders/1FlzmbTRlDx1PykRzaU_rsbtj7qlVgZaA](https://youtu.be/fGO25FMG9qU)
+
+
 ## config.yaml
 프로젝트를 진행하면서 프로젝트에서 사용하는 변수를 명시해 놓은 파일입니다. 파일에 명시되어 있는 Parameter 값을 수정하면서 각 팀의 프로젝트의 방향성에 알맞는 변수를 확인하여 수정하면서 프로젝트를 진행하면 됩니다. 
 
@@ -87,6 +92,3 @@ Main 함수에서 동작할 run 코드를 작성해야 합니다. 작성한 모�
 
 ## Main Code
 여러분이 작성한 코드가 Main함수에서 동작합니다. 만약 여러분의 코드가 문제없이 작성되었다면 여러분의 프로젝트는 무리없이 빌드되고 실행될 것입니다.
-
-## 주행 영상
-https://drive.google.com/drive/folders/1FlzmbTRlDx1PykRzaU_rsbtj7qlVgZaA
