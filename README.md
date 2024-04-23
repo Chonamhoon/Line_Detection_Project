@@ -8,6 +8,11 @@
 
 위 내용으로 학습을 진행하며 차선 이탈 없이 자율 주행하기 위해 모든 조원들이 머리를 맞대고 열심히 실습을 진행했습니다. 위의 학습한 내용을 바탕으로 차선인식 경진대회에서 자이카가 차선을 이탈하지 않고 주행할 수 있도록 주어진 템플릿을 활용해서 프로젝트를 진행하시면 됩니다. 주어진 템플릿에 대한 간략한 설명을 읽고 템플릿을 수정하면서 원하는 주행을 할 수 있는 코드를 작성해주세요.
 
+
+## 주행 영상
+[https://drive.google.com/drive/folders/1FlzmbTRlDx1PykRzaU_rsbtj7qlVgZaA](https://youtu.be/fGO25FMG9qU)
+
+
 # 템플릿 설명
 템플릿의 이름을 LaneKeepingSystem으로 변경한 다음 자이카의 xycar_ws의 src에 업로드하여 catkin_make를 하면 프로젝트의 템플릿으로 활용할 수 있습니다.
 ## CMakeLists.txt
@@ -29,10 +34,6 @@
 - std_msgs
 
 기본으로 탑재된 Library와 Package만으로도 프로젝트를 수행하는데 무리가 없으나 필요한 경우 원하는 패키지 및 라이브러리를 추가하여 사용할 수 있습니다.
-
-
-## 주행 영상
-[https://drive.google.com/drive/folders/1FlzmbTRlDx1PykRzaU_rsbtj7qlVgZaA](https://youtu.be/fGO25FMG9qU)
 
 
 ## config.yaml
