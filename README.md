@@ -245,7 +245,7 @@ void drawonFrame(Mat& frame , vector<int>pos_coord)
 
 - 출력 영상
     
-    ![image](https://youtu.be/8pc017com_Q)
+    https://youtu.be/8pc017com_Q
 
 - csv 파일 및 정확도 확인 (정답과 비교)
     
