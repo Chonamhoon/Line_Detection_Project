@@ -15,7 +15,8 @@
 
 - `y == 400` 지점에서 `lpos`, `rpos` 추출
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/e937a7f9-dece-4540-8e1e-3c5966896424/9342fc98-3eaf-4727-9803-a1a8b80b04d9/Untitled.png)
+![image](https://github.com/Chonamhoon/Line_Detection_Project/assets/145315696/f5f310b9-5399-4235-a5c2-c5aac76314da)
+
 
 </aside>
 
