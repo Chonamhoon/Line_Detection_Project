@@ -252,7 +252,7 @@ void drawonFrame(Mat& frame , vector<int>pos_coord)
 
 - 발표 영상
 
-  https://www.youtube.com/watch?v=PtIJUK09_gw&t=15s
+  https://youtu.be/_xuzuygXD6Y
 
 - csv 파일 및 정확도 확인 (정답과 비교)
     
