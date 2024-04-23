@@ -87,3 +87,6 @@ Main 함수에서 동작할 run 코드를 작성해야 합니다. 작성한 모�
 
 ## Main Code
 여러분이 작성한 코드가 Main함수에서 동작합니다. 만약 여러분의 코드가 문제없이 작성되었다면 여러분의 프로젝트는 무리없이 빌드되고 실행될 것입니다.
+
+## 주행 영상
+https://drive.google.com/drive/folders/1FlzmbTRlDx1PykRzaU_rsbtj7qlVgZaA
