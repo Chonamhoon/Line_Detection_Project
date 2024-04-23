@@ -246,10 +246,6 @@ void drawonFrame(Mat& frame , vector<int>pos_coord)
 
 # 5️⃣최종 결과
 
-- 출력 영상
-    
-    https://youtu.be/_xuzuygXD6Y
-
 - 발표 영상
 
   https://www.youtube.com/watch?v=S3Rr0fDj2TM&list=PLM1R75VoMYgmU7KVT0wt5jFw_VlzaGsLT&index=13
