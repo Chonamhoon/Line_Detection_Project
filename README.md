@@ -10,7 +10,7 @@
 
 
 ## 주행 영상
-[https://drive.google.com/drive/folders/1FlzmbTRlDx1PykRzaU_rsbtj7qlVgZaA](https://youtu.be/fGO25FMG9qU)
+https://youtu.be/fGO25FMG9qU
 
 
 # 템플릿 설명
