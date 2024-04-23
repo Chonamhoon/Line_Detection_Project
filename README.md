@@ -22,17 +22,17 @@
 
 # 📓목차
 
-### [1️⃣ 엣지 검출](https://www.notion.so/1-37dea48237184f63b7ce51ec6dce5222?pvs=21)
+### [1️⃣ 엣지 검출]
 
-### [2️⃣ lpos와 rpos의 좌표 구하기](https://www.notion.so/2-lpos-rpos-6bce6ab9fb2048c1b7aa8cc86ee2c0b9?pvs=21)
+### [2️⃣ lpos와 rpos의 좌표 구하기]
 
-### [3️⃣구한 좌표 위에 그림 그리기](https://www.notion.so/3-d950eaf2ab604fdfb29c60cb5d78a9cb?pvs=21)
+### [3️⃣구한 좌표 위에 그림 그리기]
 
-### [4️⃣문제점 및 개선 사항](https://www.notion.so/4-ec574640a1cc4fd79a79c22ccfacb85d?pvs=21)
+### [4️⃣문제점 및 개선 사항]
 
-### [5️⃣최종 결과](https://www.notion.so/5-8991a27e70d14994bbc68439871f6ea8?pvs=21)
+### [5️⃣최종 결과]
 
-### [6️⃣향후 작업 및 소감(선택)](https://www.notion.so/6-aab2677325d54397bd39f5b322d23fe8?pvs=21)
+### [6️⃣향후 작업 및 소감(선택)]
 
 ---
 
@@ -84,7 +84,8 @@ roi_pts[3] = Point(640, 480); // bottom right
 
 - `ROI Mask` 영상
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/e937a7f9-dece-4540-8e1e-3c5966896424/3d757c68-3ddb-4cca-9798-e937a50e8be8/Untitled.png)
+![image](https://github.com/Chonamhoon/Line_Detection_Project/assets/145315696/e3c641b2-ac7a-4d57-939e-af98bf92cbd1)
+
 
 ---
 
@@ -96,18 +97,21 @@ rectangle(roi, Rect(228, 397, 188, 83), Scalar(0), -1); // lidar_mask
 
 - `Lidar Mask` 영상
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/e937a7f9-dece-4540-8e1e-3c5966896424/c36a3e4b-1b6b-4541-a7b4-febd713eec11/Untitled.png)
+![image](https://github.com/Chonamhoon/Line_Detection_Project/assets/145315696/d187b662-4047-4158-a035-491757fc5a1f)
+
 
 ---
 
 - `Canny`후 `GaussianBlur`적용한 영상
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/e937a7f9-dece-4540-8e1e-3c5966896424/d4908d57-a946-4477-8be6-331f5b99e5c2/Untitled.png)
+    ![image](https://github.com/Chonamhoon/Line_Detection_Project/assets/145315696/3c397178-3f86-4f14-81c8-7fc86f7bf716)
+
     
 
 - `Canny`만 적용한 영상
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/e937a7f9-dece-4540-8e1e-3c5966896424/9beeacb4-57dd-4c90-a8d0-570b572bf76d/Untitled.png)
+    ![image](https://github.com/Chonamhoon/Line_Detection_Project/assets/145315696/0c0de80d-7bbd-478e-bb70-be82f5cfb911)
+
     
 
 ---
@@ -189,9 +193,11 @@ vector<int>getPos(const Mat& roi)
     → 3. 평균 값 계산으로 인해 `lpos` 좌표가 차선 안쪽에서 움직이게 된다.
     
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/e937a7f9-dece-4540-8e1e-3c5966896424/97ac04fa-90fb-422b-9878-9da6e71f9208/Untitled.png)
+![image](https://github.com/Chonamhoon/Line_Detection_Project/assets/145315696/856c763e-f719-471c-b708-fd250fdfd5e0)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/e937a7f9-dece-4540-8e1e-3c5966896424/434e4bc3-1717-423c-ab44-90c4651b563e/Untitled.png)
+
+![image](https://github.com/Chonamhoon/Line_Detection_Project/assets/145315696/cd37e5d8-b166-40a7-9768-9535738d8d0b)
+
 
 # 3️⃣구한 좌표 위에 그림 그리기
 
@@ -210,13 +216,15 @@ void drawonFrame(Mat& frame , vector<int>pos_coord)
 }
 ```
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/e937a7f9-dece-4540-8e1e-3c5966896424/d744ae09-7e24-45ad-bb16-8ec02f3df58f/Untitled.png)
+![image](https://github.com/Chonamhoon/Line_Detection_Project/assets/145315696/8c6b06d7-723c-4763-b70c-bd2a292520e6)
+
 
 # 4️⃣문제점 및 개선 사항
 
 - 코너부분에서 차선 검출이 잘 되지 않는 구간 발생
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/e937a7f9-dece-4540-8e1e-3c5966896424/229085fb-257a-4f43-b3a8-7d7aff01de54/Untitled.png)
+![image](https://github.com/Chonamhoon/Line_Detection_Project/assets/145315696/f2a651d5-860b-461d-8b8b-ec2613e20f16)
+
 
 → `int lpos_x = lpos_size > 0 ? (lpos[0] + lpos[lpos_size - 1]) / 2 : 0;`
 
@@ -237,12 +245,12 @@ void drawonFrame(Mat& frame , vector<int>pos_coord)
 
 - 출력 영상
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/e937a7f9-dece-4540-8e1e-3c5966896424/d744ae09-7e24-45ad-bb16-8ec02f3df58f/Untitled.png)
     
 
 - csv 파일 및 정확도 확인 (정답과 비교)
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/e937a7f9-dece-4540-8e1e-3c5966896424/f5d24fbf-b212-4f52-942c-19849706b556/Untitled.png)
+    ![image](https://github.com/Chonamhoon/Line_Detection_Project/assets/145315696/f89fdab9-b107-4de1-bea5-edb8d57fdf1a)
+
     
 
 ## 👬협업 과정
